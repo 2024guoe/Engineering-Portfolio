@@ -1,0 +1,449 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    font-size: 16px;
+}
+
+body {
+    background-color: white;
+}
+
+.divider {
+    border: none;                /* Remove default border */
+    height: 1px;                 /* Set the height to 1px to make it a thin line */
+    background-color: rgb(100, 100, 100);      /* Set the color of the line */
+    width: 80%;
+    margin: 1% auto;
+}
+
+/* Name Block */
+.name-block {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 25px 0 3%; /* Space around the name block */
+}
+
+.name-block h1 {
+    font-family: "Rock Salt", serif;
+    font-weight: 400;
+    font-size: 5rem;
+    line-height: 1.6;   
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.name-block p {
+    font-size: 2.7rem;
+    font-family: "Anton", serif;
+    font-weight: 250;
+}
+
+/* Styling for the nav and dropdown */
+nav ul {
+    list-style: none;
+    display: flex;
+    top: 0; /* Position it at the top of the page */
+    left: 0; /* Align it to the left */
+    background-color: #ffffff;
+    color: #ffffff;
+    padding: 60px 12.5% 0;
+    width: auto;
+
+}
+
+nav ul li {
+    margin: 0 20px;
+    position: relative; /* Positioning for the dropdown */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(100, 100, 100);
+    padding-bottom: 5px;
+    font-size: 1.1rem;
+    font-weight: 300;
+    font-family: 'Rubik', sans-serif;
+    border-bottom: 1px solid transparent;
+    transition: all ease-in-out .4s;
+}
+
+nav ul li a:hover {
+    color: #000000;
+    border-color: #000000;
+}
+
+/* Dropdown button */
+.dropdown {
+    position: relative; /* Position it relative to its parent */
+}
+
+.dropbtn {
+    background-color: white;
+    color: rgb(100, 100, 100);
+    padding: 5px;
+    font-size: 1.1rem;
+    font-weight: 300;
+    font-family: 'Rubik', sans-serif;
+    border: none;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+    transition: all ease-in-out .4s;
+}
+
+.dropbtn:hover {
+    color: #000000;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 120%; /* Position below the dropdown button */
+    left: 0;
+}
+
+.dropdown-content a {
+    color: rgb(100, 100, 100);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-bottom: 1px solid transparent;
+    transition: all ease-in-out .4s;
+}
+
+.dropdown-content a:hover {
+    color: rgb(100, 100, 100);
+    border-color: rgb(100, 100, 100);
+}
+
+/* Show the dropdown content when hovering over the dropdown */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* Combined About and Welcome Section */
+.about-welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 60px 20px;
+}
+
+.about-content {
+    display: flex;
+    max-width: 75%;
+    width: 100%;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-image {
+    max-width: 25%; /* Set image width to 25% of the section */
+    height: auto;
+    object-fit: cover;
+}
+
+.about-text {
+    max-width: 75%; /* Set text area to take up the remaining 75% */
+    padding-left: 60px;
+}
+
+.about-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+    font-family: "Rubik", serif;
+    font-weight: 350;
+}
+
+/* Projects Section */
+.projects {
+    background-color: #fff; /* Change this to white to remove grey */
+    color: #000000;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 2.5rem;
+    font-family: "Anton", serif;
+    font-weight: 250;
+    margin-bottom: 50px; /* Add space between the title and the project cards */
+}
+
+.project-grid { /* Apply a background color to the project grid or cards */
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the project cards */
+    background-color: #e0dfdf; /* Grey background surrounding the project cards */
+    max-width: 75%; /* Adjust this value to control the width of the grey area */
+    padding: 30px; /* Optional: add padding inside the grid */
+    margin: 0 auto; /* Centers the grey area horizontally */
+}
+
+.project-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.project-card a h3 {
+    font-size: 1.5rem;
+    font-family: 'Anton', sans-serif;
+    font-weight: 250;
+    margin-bottom: 15px;
+}
+
+.project-card a p {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 350;
+    line-height: 1.6;
+}
+
+/* card not look like links */
+.project-card a {
+    text-decoration: none;  /* Remove underline */
+    color: inherit;         /* Inherit text color from the parent */
+    display: block;         /* Ensure the entire area is clickable */
+}
+
+.project-card a:hover {
+    text-decoration: none;  /* Ensure no underline on hover */
+    color: inherit;         /* Keep the color same when hovered */
+}
+
+.project-card h3, .project-card p {
+    margin: 0;
+    font-family: 'Roboto', sans-serif; /* You can adjust the font as per your design */
+}
+
+/* Contact Section */
+.contact {
+    background-color: #fff;
+    color: #000000;
+    padding: 60px 20px;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    font-family: 'Anton', sans-serif;
+    font-weight: 300;
+    margin-bottom: 50px; /* Add space between the title and form */
+}
+
+.contact p {
+    font-size: 1.1rem;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    margin-bottom: 30px; 
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Center the form elements */
+    width: 100%;
+    max-width: 600px; /* Limit the form width */
+    margin: 0 auto;
+}
+
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    max-width: 500px; /* Limit input width */
+    margin: 10px 0;
+    padding: 15px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contact form button {
+    padding: 15px;
+    background-color: #00bcd4;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+/*project pages*/
+.project-detail {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.project-detail h2 {
+    font-size: 2.5rem;
+    font-family: 'Anton', sans-serif;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.project-detail img{
+    max-width: 50%;
+    margin-bottom: 20px;
+}
+.column-wrapper {
+    display: flex;
+    justify-content: center; /* Centers the .three-column-layout horizontally */
+    width: 100%;  /* Ensure it takes up the full width of the screen */
+}
+
+/* Styles for the three-column layout */
+.three-column-layout {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;  /* Distribute columns evenly */
+    gap: 15px;  /* Space between columns */
+    width: 75%;
+}
+
+.three-column-layout .column {
+    flex: 1;  /* Each column will take up equal width */
+    padding: 0 15px;  /* Add horizontal padding between columns */
+    text-align: center;  /* Align text to the left */
+}
+
+.three-column-layout .column h3 {
+    font-size: 1.7 rem;
+    font-family: 'Rock Salt', serif;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+.three-column-layout .column p {
+    margin-bottom: 0px;  /* Space between paragraphs */
+    font-size: 1rem;
+    line-height: 1.6;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 250;
+}
+
+/* Optional: Make layout responsive for smaller screens */
+@media (max-width: 768px) {
+    .three-column-layout {
+        flex-direction: column;  /* Stack columns on top of each other on small screens */
+        gap: 20px;  /* Smaller gap for mobile screens */
+    }
+    
+    .three-column-layout .column {
+        padding: 0 10px;  /* Reduced padding for mobile screens */
+    }
+}
+
+/*project image grid*/
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 20px;
+    justify-items: center; /* Center items in their grid cells */
+    margin: 0px auto; /* Center the grid and add spacing from top and bottom */
+    margin-bottom: 50px;
+    max-width: 75%; /* Set max width of the grid container */
+    background-color: white; /* Set the background color to white */
+    padding: 20px; /* Optional padding inside the grid */
+}
+
+.project-item {
+    position: relative;
+    overflow: hidden; /* Ensures the caption is hidden until hovered */
+    width: 100%; /* Ensure items take full width of the grid cell */
+}
+
+.project-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 0.3s ease; /* Adds a smooth transition effect */
+}
+
+.project-item .caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for the caption */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    opacity: 0; /* Initially hide the caption */
+    transition: opacity 0.3s ease; /* Fade effect on hover */
+}
+
+.project-item:hover .caption {
+    opacity: 1; /* Show the caption when hovered */
+}
+
+.project-item:hover img {
+    opacity: 0.7; /* Slightly fade the image when hovered to make the caption more visible */
+}
+
+/*footer*/
+footer {
+    text-align: center;
+    padding: 3%;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+footer p {
+    font-size: 1rem;
+    font-family: 'Rubik', sans-serif;
+}
+
+footer a {
+    color: #00bcd4;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Smooth Scroll and Fullscreen */
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-snap-type: y mandatory;
+}

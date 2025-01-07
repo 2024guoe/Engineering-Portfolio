@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1 - My Engineering Portfolio</title>
+    <!-- Importing Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Anton&family=Rock+Salt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="index.html#projects" class="dropbtn">Projects</a>
+                <div class="dropdown-content">
+                    <a href="project1.html">Hummingbirds</a>
+                    <a href="project2.html">Injectors</a>
+                    <a href="project3.html">L2 Rocket</a>
+                </div>
+            </li>
+            <!-- <li><a href="contact.html">Contact</a></li>-->
+        </ul>
+    </nav>
+    <br>
+    <hr class="divider">
+
+   <!-- Project Detail Section -->
+   <section class="project-detail">
+    <h2>Fountain Hopper Injector: Detailed Overview</h2>
+    <img src="img/injector ansys.png" alt="ansys injector thermal CFD (computational fluid dynamics) stimulation">
+    <hr class="divider">
+
+    <div class="column-wrapper">
+        <div class="three-column-layout">
+            <div class="column context">
+                <h3>Context</h3>
+                <p>Fountain Hopper is the Stanford Student Space Initiative (SSI) Rocket Team's rocket for the Collegiate Propulsive Lander Challenge, 
+                    a new rocketry competition that aims to take new innovations in industry's self-landing rockets to the collegiate level. 
+                    We aim to complete a series of milestones that will result in a self-landing rocket. We are using a hybrid propellant system to accomplish this. 
+                    This is SSI's first time attempting hybrid rocketry, and we’ve encountered many learning opportunities thus far. 
+                    </p>
+            </div>
+            <div class="column content">
+                <h3>Content</h3>
+                <p>On Fountain Hopper, I am mainly developing our injector plate. 
+                    I researched different showerhead-style injectors previously used in liquid and hybrid rockets to determine possible orifice arrangements on the injector plate and best orifice diameters. 
+                    Our team chose the the homogeneous equilibrium mass flow rate model to model N2O flow through our propulsion system, so I utilized that equation (ṁ = Cd * A * sqrt(2 *ρ * ΔP)) to determine A, 
+                    the total injector orifice area to determine the optimal number of orifices. Using OnShape, I CADed potential designs and then chose a scattered arrangement of orifices after running careful analyses using various softwares. 
+                    My current injector is a four ring, 42-orifice brass plate arranged in a scattered fashion.
+</p>
+            </div>
+            <div class="column conclusion">
+                <h3>Conclusion</h3>
+                <p>As the team conducts cold flow testing, hydrostatic testing, static fires, and hot fires in the coming weeks, I’llbe improving the design of the injector as needed.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="project-grid">
+    <div class="project-item">
+        <img src="img/injector final cad.png" alt="CAD Model of the (current) final injector, featuring a staggered pattern">
+        <div class="caption">CAD Model of the (current) final injector, featuring a staggered pattern</div>
+    </div>
+    <div class="project-item">
+        <img src="img/injector old design.png" alt="CAD Model of a different prototype; this one had a 3-ring circular pattern">
+        <div class="caption">CAD Model of a different prototype; this one had a 3-ring circular pattern</div>
+    </div>
+    <div class="project-item">
+        <img src="img/injector engineering drawing.png" alt="Engineering drawing of the (current) final injector">
+        <div class="caption">Engineering drawing of the (current) final injector</div>
+    </div>
+    <div class="project-item">
+        <img src="img/injector ansys.png" alt="Injector FEA focusing on thermal deformation using Ansys">
+        <div class="caption">Injector FEA focusing on thermal deformation using Ansys</div>
+    </div>
+    <!-- Add more project items as needed -->
+</section>
+
+<hr class="divider">
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Ellen Guo. All Rights Reserved. | Email: <a href="mailto:ellenguo2024@gmail.com">ellenguo2024@gmail.com</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
