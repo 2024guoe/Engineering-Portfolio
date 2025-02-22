@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1 - My Engineering Portfolio</title>
+    <!-- Importing Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Anton&family=Rock+Salt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="index.html#projects" class="dropbtn">Projects</a>
+                <div class="dropdown-content">
+                    <a href="project1.html">Hummingbirds</a>
+                    <a href="project2.html">Fountain Hopper Injector</a>
+                    <a href="project3.html">L2 Rocket</a>
+                    <a href="project4.html">Project Red-Winged Blackbird</a>
+                    <a href="project5.html">Fountain Hopper Ignitor</a>
+                </div>
+            </li>
+            <!-- <li><a href="contact.html">Contact</a></li>-->
+        </ul>
+    </nav>
+    <br>
+    <hr class="divider">
+
+   <!-- Project Detail Section -->
+   <section class="project-detail">
+    <h2>Fountain Hopper Injector: Detailed Overview</h2>
+    <img src="img/injector ansys.png" alt="ansys injector thermal CFD (computational fluid dynamics) stimulation">
+    <hr class="divider">
+
+    <div class="column-wrapper">
+        <div class="three-column-layout">
+            <div class="column context">
+                <h3>Context</h3>
+                <p>Fountain Hopper is the Stanford Student Space Initiative (SSI) Rocket Team's rocket for the Collegiate Propulsive Lander Challenge, 
+                    a new rocketry competition that aims to take new innovations in industry's self-landing rockets to the collegiate level. 
+                    We aim to complete a series of milestones that will result in a self-landing rocket. We are using a hybrid propellant system to accomplish this. 
+                    This is SSI's first time attempting hybrid rocketry, and we’ve encountered many learning opportunities thus far. 
+                    </p>
+            </div>
+            <div class="column content">
+                <h3>Content</h3>
+                <p>One of the parts of the Fountain Hopper enginer I am in charge of is devloping the ignition method. 
+                    I researched different ignitors, including attending a lecture about the different styles during the 2025 Liquid Propulsion Symposium.
+                    I settled on using a small COTS motor to light and melt the solid paraffin wax part of our hybrid engine. The small COTS motor is set off using an
+                    e-match. I am optimizing for a burn time of around 10 seconds, along with a flame that spreads in a way that allows it to reach and ignite the paraffin grain.
+                    I am 3D printing the casings + nozzles using PLA, with the goal that it may melt away as the motor ignites. Currently, I am experimenting with different nozzle types
+                    to find the nozzle that allows for the best spread and burn time.
+                </p>
+
+            </div>
+            <div class="column conclusion">
+                <h3>Conclusion</h3>
+                <p>Coming soon!
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="project-grid">
+    <div class="project-item">
+        <img src="img/fh ignitor v1 post.jpg" alt="">
+        <div class="caption">V1 of ignitor nozzle after firing</div>
+    </div>
+    <div class="project-item">
+        <img src="img/fh v3.jpg" alt="Engineering drawing of the (current) final injector">
+        <div class="caption">V3 of ignitor pre-firing; trying curved nozzle</div>
+    </div>
+    <!-- Add more project items as needed -->
+</section>
+
+<hr class="divider">
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Ellen Guo. All Rights Reserved. | Email: <a href="mailto:ellenguo2024@gmail.com">ellenguo2024@gmail.com</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
