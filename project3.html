@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project 1 - My Engineering Portfolio</title>
+    <title>Project 3 - My Engineering Portfolio</title>
     <!-- Importing Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,9 +21,11 @@
                 <div class="dropdown-content">
                     <a href="project1.html">Hummingbirds</a>
                     <a href="project2.html">Fountain Hopper Injector</a>
-                    <a href="project3.html">L2 Rocket</a>
+                    <a href="project3.html">Project Common Loon (L2)</a>
                     <a href="project4.html">Project Red-Winged Blackbird</a>
                     <a href="project5.html">Fountain Hopper Ignitor</a>
+                    <a href="project6.html">Project Oscar the Grouch</a>
+                    <a href="project7.html">Project Tawny Owl</a>2zz
                 </div>
             </li>
             <!-- <li><a href="contact.html">Contact</a></li>-->
@@ -34,7 +36,7 @@
 
     <!-- Project Detail Section -->
     <section class="project-detail">
-        <h2>Level 2 High-Powered Rocket: Detailed Overview</h2>
+        <h2>Project Common Loon, Level 2 High-Powered Rocket: Detailed Overview</h2>
         <img src="img/L2 openrocket.png" alt="openrocket file of L2 rocket design">
         <hr class="divider">
 
@@ -49,14 +51,33 @@
                 <div class="column content">
                     <h3>Content</h3>
                     <p>I am designing my L2 rocket with the goal to learn as much as possible within the world of amateur rocketry. 
-                        I will be designing and coding an avionics (AV) component that allows me to GPS track my rocket’s flight and have dual-deploy parachutes. 
-                        Additionally, I will 3D print an AV bay. As I also want to learn how to work with composites, I’ll be adding carbon fiber lay-ups on my fins. 
-                        My phenolic body tube will be 66mm in diameter and have a 54mm motor mount, and I will be creating my own fiberglass nose cone.
+                        I will be learning how to use Eggtimer's Quasar as my AV component, which allows me to GPS track my rocket’s flight, gather flight data, and have dual-deploy parachutes. 
+                        Additionally, I will 3D print an AV bay. One side of the AV will be bolted into my upper airframe, and the other side will friction fit 
+                        into my lower airframe, and pop out with drogue parachute deployment. Therefore the AV is acting like a coupler between my upper and lower airframes. 
+                        My main chute is stored within the coupler between my nosecone and upper airframe, and that part will pop out upon main deployment. 
+                        As I also want to learn how to work with composites, I’ll be adding carbon fiber lay-ups on my fins.
+                        My phenolic body tube will be 66mm in diameter and have a 54mm motor mount, and I will be creating my own fiberglass nose cone. I'm using a 
+                        pin switch, similar to what I used on Red-Winged Blackbird. I will be flying this rocket on an Aerotech J800T, which is an RMS motor, and therefore also requires some assembly, 
+                        which I'll learn how to assemble. To secure this type of motor in my rocket, I'll be using a bulkhead and threaded rod between the bulkead and the forward closure. 
                     </p>
                 </div>
                 <div class="column conclusion">
                     <h3>Conclusion</h3>
-                    <p>Coming soon!</p>
+                    <p>The build process gave me several opportunities to trouble shoot. Bolting my AV into the upper airframe proved to be quite the challenge. At first, 
+                        I thought I could just drill three holes into my airframe and AV coupler and then JB Weld hex nuts into the inside of my airframe where the holes were.
+                        Unfortunately, one of the nuts broke off the inside of the airframe while the screw was still inside it, meaning it would be impossible to unscrew the screw 
+                        as the nut would just be turning freely inside the airframe. The nut was too far in for my hand to reach, and the pliers 
+                        were too wide to fit into the airframe. None of our wrenches were the right size. In the end, I 3D printed a part to act as a wrench to hold the nut in place. 
+                        The next time I do bolting work into airframes however, I'd like to come up with a better solution that prevents this ecompletely. </p>
+                    <p> Fortunately, there were no problems with my flight, flying over a mile above Earth, at an apogee of 6207 ft. This is only about 200 ft lower than I simulated, 
+                        with variation likely due to to drag of the camera (see below) and perhaps the light winds. It pulled 29 Gs and hit Mach 1.6, which was much faster than I had simulated (Mach 1.1). 
+                        The only reason I can think of to explain that is perhaps I made my nosecone shape more optimally than I had simulated--since I only used the default Ogive nosecone in Openrocket
+                         but I CADed and built my own nosecone to different sizing than the Openrocket had, perhaps my nosecone was aerodynamically better. An addition I decided on 
+                        later in my build process was adding a camera to the side! This took some extra consideration on best location and placement,
+                        but looking at my OpenRocket simulations, strapping the RunCam to the side of my rocket wouldn't affect its balance much as the 
+                        RunCam is very light compared to the rest of my rocket. I ended up getting some really cool video footage of the Earth from my rocket's 
+                        perspective as it launched! Overall, I was extremely happy with my flight, and I am now NAR L2 certified!
+                    </p>
                 </div>
             </div>
         </div>
@@ -65,16 +86,32 @@
 
     <section class="project-grid">
         <div class="project-item">
-            <img src="img/rwbb failed jig print.PNG" alt="">
-            <div class="caption">Attempting a PVA filament print of nose cone jig</div>
+            <img src="img/L2 cf fin layup.jpg" alt="">
+            <div class="caption">Fiberglass and Carbon Fiber fin layups with West Systems 105/205 epoxy</div>
         </div>
         <div class="project-item">
-            <img src="img/rwbb fiberglass over jig.jpg" alt="">
-            <div class="caption">Fiberglass and epoxy successfully layed over jig!</div>
+            <img src="img/CL screw stuck.jpg" alt="">
+            <div class="caption">The screw bolting the AV coupler to my airframe got stuck because the nut detatched from the inside of the airframe!</div>
         </div>
         <div class="project-item">
-            <img src="img/rwbb scooping out pva innards.jpg.jpg" alt="">
-            <div class="caption">Scooping out the water-soluble PVA innards from the fiberglass-left with my raw nose cone!</div>
+            <img src="img/CL integration.jpg" alt="">
+            <div class="caption">Integrating my rocket in the car! I'd gotten so used to working with it by that point it was pretty easy to do it from the passanger seat. </div>
+        </div>
+        <div class="project-item">
+            <img src="img/CL firing from burner phone.jpg" alt="">
+            <div class="caption"> Firing with an ematch ignitor from the viewpoint of a burner phone set up next to the test stand. </div>
+        </div>
+        <div class="project-item">
+            <img src="img/CL firing from rocket phone.jpg" alt="">
+            <div class="caption"> Firing from the perspective of the RunCam on the rocket! </div>
+        </div>
+        <div class="project-item">
+            <img src="img/CL firing from rocket phone.jpg" alt="">
+            <div class="caption"> Earth from the perspective of my rocket! </div>
+        </div>
+        <div class="project-item">
+            <img src="img/CL perfect recovery.jpg" alt="">
+            <div class="caption"> A perfect recovery on drouge and main, landing about half a mile from the original launch location. </div>
         </div>
         <!-- Add more project items as needed -->
     </section>
@@ -82,7 +119,7 @@
 <hr class="divider">
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Ellen Guo. All Rights Reserved. | Email: <a href="mailto:ellenguo2024@gmail.com">ellenguo2024@gmail.com</a></p>
+        <p>&copy; 2025 Ellen Guo. All Rights Reserved. | Email: <a href="mailto:ellenguo2024@gmail.com">ellenguo2024@gmail.com</a></p>
     </footer>
 
     <script src="script.js"></script>
